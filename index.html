@@ -333,7 +333,7 @@
       document.getElementById("cardsSection").innerHTML = "";
       arr.map((item, index) => {
         console.log("Development: " + item.title)
-        document.getElementById("cardsSection").innerHTML += `<div class="col-lg-2 wil-col-5 col-md-3 col-sm-6 col-xs-6">
+        document.getElementById("cardsSection").innerHTML += `<div class="col-lg-3 wil-col-5 col-md-3 col-sm-6 col-xs-6">
             <article data-v-101044c0=""
               class="listing_module__2EnGq wil-shadow js-listing-module wil-flex-column-between wil-shadow wil-flex-column-between">
               <div class="listing_firstWrap__36UOZ">
@@ -4407,38 +4407,16 @@
   </div>
   <div id="wilcity-root" class="page-wrap">
     <div></div>
-    <header id="wilcity-header-section" style="background-image: linear-gradient(270deg,#252c41,#fff);"
-      class="header_module__Snpib js-header-sticky" data-header-theme="dark" data-menu-color="">
+    <header id="wilcity-header-section" style="background-image: linear-gradient(270deg,#fff,#fff);"
+      class="header_module__Snpib js-header-sticky" style="align-items: center;" data-header-theme="dark"
+      data-menu-color="">
       <div class="wil-tb">
-        <div class="wil-tb__cell">
+        <div class="wil-tb__cell" style="text-align:center">
           <div class="header_logo__2HmDH js-header-logo">
             <a class="wilcity-site-logo" href="index.html">
               <img src="./landing_files/logo.png" alt="Virtue Master">
             </a>
           </div>
-        </div>
-        <div class="wil-tb__cell">
-          <!--
-          <div class="header_navWrapper__B2C9n">
-            <div id="wil-login-register-controller" class="header_login__1sQ6w">
-              <div class="header_btnGroup__3L61P">
-                <a href="" target="_self" class="wil-btn no-text-sm wil-btn--primary2 wil-btn--round wil-btn--xs"
-                  id="wilcity-login-btn">
-                  <i class="fa fa-unlock-alt"></i> <span class="">Login</span>
-
-                </a>
-                <a href="" target="_self" class="wil-btn no-text-sm wil-btn--secondary wil-btn--round wil-btn--xs"
-                  id="wilcity-register-btn">
-                  <i class="fa fa-user-plus"></i> <span class="">Register</span>
-
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-          -->
         </div>
     </header>
     <nav class="nav-mobile" data-menu-content="vertical" style="left: 0px; right: auto; width: 300px;">
@@ -5541,7 +5519,9 @@
         </div>
       </div>
       <div class="footer_textWrap__Xc_Ht wil-text-center">
-        <div class="footer_text__1FkcM">Copyright © 2021 Virtue Master
+        <div class="footer_text__1FkcM">Copyright &copy;
+          <script>document.write(new Date().getFullYear());
+          </script> Virtue Master
         </div>
       </div>
     </footer>
@@ -5673,7 +5653,8 @@
   <script type="text/javascript" src="./landing_files/comment-reply.min.js.download" id="comment-reply-js"></script>
   <script type="text/javascript" src="./landing_files/wp-embed.min.js.download" id="wp-embed-js"></script>
   <script type="text/javascript" src="./landing_files/mailchimp.js.download" id="wilcity-widget-mailchimp-js"></script>
-  <script src="./landing_files/e-202130.js.download" defer=""></script>
+  <script src="./landing_files/e-<script>document.write(new Date().getFullYear());
+              </script>30.js.download" defer=""></script>
   <script>
     _stq = window._stq || [];
     _stq.push(['view', { v: 'ext', j: '1:9.5', blog: '147755700', post: '12108', tz: '7', srv: 'wilcity.com' }]);
